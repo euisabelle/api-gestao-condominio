@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface MoradorRepository extends JpaRepository<Morador, Long> {
+    java.util.Optional<Morador> findByEmail(String email);
 }
